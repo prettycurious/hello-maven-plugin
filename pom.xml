@@ -38,6 +38,52 @@
         <groupId>sample.plugin</groupId>
         <artifactId>hello-maven-plugin</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <executions>
+          <execution>
+            <phase>compile</phase>
+            <configuration>
+
+              <urlStr>http://xiazai.xqishu.com/txt/%E6%90%9C%E7%A5%9E%E8%AE%B0.txt</urlStr>
+              <fileName>搜神记.txt</fileName>
+              <savePath>/Users/user</savePath>
+
+              <greeting>Welcome</greeting>
+              <myBoolean>true</myBoolean>
+              <myInteger>10</myInteger>
+              <myDouble>1.0</myDouble>
+              <myDate>2005-10-06 2:22:55.1 PM</myDate>
+              <myFile>/hello-maven-plugin.iml</myFile>
+              <myURL>http://maven.apache.org</myURL>
+              <myArray>
+                <param>value1</param>
+                <param>value2</param>
+              </myArray>
+              <myList>
+                <param>value1</param>
+                <param>value2</param>
+              </myList>
+              <myMap>
+                <key1>value1</key1>
+                <key2>value2</key2>
+              </myMap>
+              <myProperties>
+                <property>
+                  <name>propertyName1</name>
+                  <value>propertyValue1</value>
+                </property>
+                <property>
+                  <name>propertyName2</name>
+                  <value>propertyValue2</value>
+                </property>
+              </myProperties>
+
+
+            </configuration>
+            <goals>
+              <goal>sayhi</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
